@@ -1,0 +1,135 @@
+*{
+padding: 0;
+margin: 0;
+color: white;
+font-family: sans-serif;
+}
+body{
+    background-color: rgb(90, 18, 199);
+    display: flex;
+
+}
+
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+overflow: hidden;
+border: 3px solid white;
+flex-shrink: 0;
+}
+.img-box img{
+width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu:hover{
+    width: 260px;
+}
+.menu{
+    background-color: rgb(146, 205, 36);
+    width: 80px;
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+ul{
+    position: relative;
+    list-style: none;
+    height: 95%;
+}
+ul li a{
+display: block;
+text-decoration: none;
+background-color:  #60499b55;
+padding: 10px;
+margin: 10px;
+border-radius:8px ;
+display: flex;
+align-items: center;
+gap: 40px;
+}
+ul li a:hover, .active , .data-info .box:hover, td:hover{
+    background-color: #298ddb55;
+}
+.log-out{
+    position: absolute;
+    bottom: 0%;
+    width:100%;
+}
+.log-out a{
+    background-color: tomato;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+  width: 100%;
+  margin: 10px;
+}
+.title-info{
+background-color: #1fc9f455;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-radius: 8px;
+margin: 20px ;
+}
+.data-info{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap:wrap ;
+gap: 8px;
+}
+.data-info .box{
+height: 150px;
+background-color: blue;
+flex-basis: 150px;
+flex-grow: 1;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.data-info .box i{
+font-size: 40px;
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 30px;
+}
+table{
+text-align: center;
+width: 100%;
+border-spacing: 8px;
+
+}
+ts, th{
+    background-color: rgb(22, 37, 199);
+    height: 40px;
+    border-radius: 8px;
+}
+.price, .count{
+    padding: 3px;
+    border-radius: 6px;
+    margin-bottom: 5px !important;
+}
+.price{
+    background-color: greenyellow;
+}
+.count{
+    background-color: gold;
+    color:black;
+}
